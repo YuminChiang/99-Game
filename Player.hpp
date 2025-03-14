@@ -125,6 +125,6 @@ void Player::SetPriority(int Number) {
     Priority = Number;
 }
 
-int Player::GetPriority() {
+int Player::GetPriority() const {
     return Priority;
 }
