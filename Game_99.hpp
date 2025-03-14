@@ -274,7 +274,7 @@ void Game_99::SetPlayerName() {
 }
 
 void Game_99::SetOrder() {
-    cout << " DeterPlayer_Deck player order" << endl << endl;
+    cout << " DeterminPlayer_Deck player order" << endl << endl;
     for (auto &&i : Players)
     {
         i.GetName();
