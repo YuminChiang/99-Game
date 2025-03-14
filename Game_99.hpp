@@ -312,10 +312,9 @@ void Game_99::CheckDeck() {
 }
 
 void Game_99::Sort() {
-    for (int i = 0; i < PlayerNum - 1; i++)
-        for (int j = i + 1; j < PlayerNum; j++)
-            if (Players.at(i).GetPriority() > Players.at(j).GetPriority())
-                swap(Players.at(i), Players.at(j));
+    std::sort(Players.begin(), Players.end(), [](const Player& a, const Player& b) {
+        return a.GetPriority() < b.GetPriority();  // 由小到大排序
+    });
 }
 
 void Game_99::SetID() {

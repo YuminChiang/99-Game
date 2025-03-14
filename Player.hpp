@@ -26,7 +26,7 @@ public:
     void SetEliminateID(int);
     int GetEliminateID();
     void SetPriority(int);
-    int GetPriority();
+    int GetPriority() const;
     Card GetCard(int);
     int GetSuit_Number(int);
     void ShowCard(int);
